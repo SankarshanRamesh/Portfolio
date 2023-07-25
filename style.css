@@ -67,6 +67,7 @@ body {
   padding: 30px;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 .about_me_img {
