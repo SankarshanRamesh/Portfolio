@@ -294,7 +294,7 @@ body {
   color: #2962FF;
 }
 
-@keyframes skill-animation {
+/* @keyframes skill-animation {
   0% {
     opacity: 0;
     transform: translateX(100%);
@@ -314,7 +314,7 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
-}
+} */
 
 @keyframes name-info {
   0% {
