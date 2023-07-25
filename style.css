@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh; /* Set a fixed height */
+  overflow: auto; /* Enable vertical scrolling */
+  font-style: normal;
+  width: fit-content;
+}
+
+.main {
+  height: 1500px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info {
+  height: 100vh;
+  background: linear-gradient(180deg, #0b0b0b, transparent),
+    url(asset/main-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-top: 85px; */
+}
+
+.about_me_info {
+  /*background-color: #149ddd;*/
+  background-color: #5c1b1b;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal_content {
+  padding-bottom: 25px;
+  color: white;
+}
+
+.about_me {
+  display: flex;
+  flex-direction: column;
+}
+.photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px 0px;
+  align-items: center;
+}
+
+.about_me_info {
+  background-color: #000000;
+  background-attachment: fixed;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_me_img {
+  width: 80%;
+  min-height: 120px;
+  height: 60%;
+}
+
+.heading {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.heading-top-padding {
+  color: white;
+  padding-top: 20px;
+}
+
+.myskills-top-padding {
+  color: white;
+  padding-top: 60px;
+}
+
+.name {
+  font-size: 4rem;
+  color: #149ddd;
+  letter-spacing: 3px;
+}
+
+.name-anime {
+  animation: name-info 4s forwards;
+}
+
+.position {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 3px;
+  padding: 20px;
+}
+
+/*  button download cv */
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  /* width: 250px; */
+  cursor: pointer;
+}
+
+.btn-one {
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+  letter-spacing: 3px;
+  color: #149ddd;
+}
+.btn-one::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.btn-one::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-one:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+/*  button download cv */
+
+.skills-opacity {
+  opacity: 0;
+}
+
+.skill-icon {
+  width: 55%;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 35px 0px;
+}
+
+.skill-img {
+  text-align: center;
+}
+
+.my-skills {
+  flex-basis: 33%;
+  padding-bottom: 30px;
+}
+
+.skill-name {
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+}
+
+.about-animation {
+  animation: about-me-animation 3s forwards;
+}
+
+.skill-info-animation {
+  animation: skill-animation 3s forwards;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #0A66C2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #171515 ;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #2962FF;
+}
+
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #0A66C2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #171515;
+}
+.wrapper .button:nth-child(3) span{
+  color: #2962FF;
+}
+
+@keyframes skill-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes about-me-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes name-info {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about_me {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .photo {
+    flex-basis: 50%;
+  }
+  .personal_info {
+    /* flex-basis: 50%;  */
+    color: white;
+  }
+  .my-skills {
+    flex-basis: 25%;
+    padding-bottom: 30px;
+  }
+  .skill-icon {
+    width: 25%;
+  }
+  .about_me_info {
+    padding: 60px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .photo {
+    align-items: flex-start;
+    padding: 0px;
+  }
+
+  .about_me {
+    height: 500px;
+  }
+
+  .about_me_info {
+    padding: 40px 100px;
+  }
+}
+
+/* spinner loader */
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  width: 100vw;
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
