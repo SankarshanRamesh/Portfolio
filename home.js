@@ -11,11 +11,11 @@ const handleIntersect = (entries, observer) => {
     console.log(observer);
     if (entry.isIntersecting) {
       if (slowEffectPropName.includes(entry.target.className)) {
-        addAnimeForName(entry);
+        // addAnimeForName(entry);
       } else if (entry.target.className === "personal_content") {
-        addAnimeForAboutInfo(entry);
+        // addAnimeForAboutInfo(entry);
       } else if (entry.target.className === "skill-info") {
-        addAnimeForSkillInfo(entry);
+        // addAnimeForSkillInfo(entry);
       }
     }
   });
