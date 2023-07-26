@@ -86,7 +86,7 @@ function onLinkedInIconClick() {
 }
 
 function onGitHubIconClick() {
-  window.open("https://github.com/sankarshanramesh24/");
+  window.open("https://github.com/SankarshanRamesh/");
 }
 
 function onHashnodeIconClick() {
