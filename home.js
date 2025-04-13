@@ -66,7 +66,7 @@ function addAnimeForSkillInfo(entry) {
 }
 
 function download() {
-  window.open("asset/Sankarshan-Resume-dotnet-2023.pdf", "_blank");
+  window.open("asset/Sankarshan-Resume-dotnet-2025.pdf", "_blank");
 }
 
 window.onload = () => {};
